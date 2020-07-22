@@ -31,6 +31,31 @@
                 if (resto==0)
                     document.write(i + " es un año bisiesto"+"<br>");
             }
+			
+			//Fase3
+			var esTraspas;
+			resto = any % 4;
+			var frase1, frase2, nomCognom, data;
+			
+			if (resto == 0)
+                esTraspas = true;
+            else
+                esTraspas = false;
+
+            frase1 = "mi año de nacimiento es bisiesto";
+            frase2 = "mi año de nacimiento no es bisiesto";
+
+            nomCognom = nom + " " + cognom1 + " " + cognom2;
+            data = dia + "/" + mes + "/" + any;
+
+            document.write("El meu nom és " + nomCognom+"<br>");
+            document.write("Vaig néixer el " + data+"<br>");
+
+            if (esTraspas)
+                document.write(frase1+"<br>");
+            else
+                document.write(frase2+"<br>");
+			
 </script>
 
 </head>
